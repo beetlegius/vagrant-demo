@@ -84,6 +84,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
 
     chef.add_recipe "apt"
+    chef.add_recipe "aptitude"
     chef.add_recipe "nodejs"
     chef.add_recipe "ruby_build"
     chef.add_recipe "rbenv::user"
